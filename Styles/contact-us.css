@@ -1,0 +1,128 @@
+@font-face {
+    font-family: raleway;
+    src: url(myfont.ttf);
+}
+
+.contact-intro, .contact-details, .contact-form, .map-location {
+    margin-top: 1.5rem;
+    background-color: var(--lightblue);
+    max-width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-intro {
+    margin-top: 11rem;
+}
+
+.box-heading {
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box-content {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--darkblue);
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    font-size: 1.25rem;
+    color: var(--lightblack);
+}
+
+.contact-form form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    margin-left: 25%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--darkblue);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--lightblack);
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    color: var(--darkblack);
+    background-color: var(--bgclr);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background-color: var(--darkblue);
+    color: var(--bgclr);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--lightblack);
+}
+
+iframe {
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-item p {
+        font-size: 1.1rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

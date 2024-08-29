@@ -1,0 +1,104 @@
+@font-face {
+    font-family: raleway;
+    src: url(myfont.ttf);
+}
+
+.ownership-journey, .ownership-steps, .why-choose-us {
+    margin-top: 1.5rem;
+    background-color: var(--lightblue);
+    max-width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ownership-journey {
+    margin-top: 18.5rem;
+}
+
+.box-heading {
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box-content {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+.ownership-steps .box-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ownership-steps .box-content ul li {
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    color: var(--lightblack);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.ownership-steps .box-content ul li i {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    color: var(--bgclr);
+    background-color: var(--darkblue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.why-choose-us , .ownership-journey{
+    background-color: var(--bgclr);
+    color: var(--darkblack);
+    padding: 3rem 2rem;
+}
+
+
+.why-choose-us .box-heading {
+    color: var(--darkblue);
+}
+
+.why-choose-us .box-content {
+    color: var(--lightblack);
+}
+
+@media (max-width: 768px) {
+    .ownership-journey, .ownership-steps, .why-choose-us {
+        padding: 2rem 1.5rem;
+    }
+
+    .box-heading, .box-content {
+        text-align: center;
+    }
+
+    .ownership-steps .box-content ul li {
+        font-size: 1.1rem;
+        padding-left: 4rem;
+    }
+
+    .ownership-steps .box-content ul li i {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}

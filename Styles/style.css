@@ -1,0 +1,262 @@
+@font-face {
+    font-family: raleway;
+    src: url(myfont.ttf);
+}
+
+:root {
+    --bgclr: #ffffff;
+    --darkblue: #2a50cb;
+    --lightblue: #dcdffd;
+    --darkblack: #242424;
+    --lightblack: #484848;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: raleway, sans-serif;
+}
+
+body {
+    background-color: var(--bgclr);
+}
+
+.nav-bar {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name {
+    margin-left: 0.25rem;
+    font-weight: bolder;
+    color: var(--darkblue);
+    font-size: 1.25rem;
+}
+
+.menu-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: var(--lightblack);
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.menu-items a:hover {
+    color: var(--darkblue);
+}
+
+.contact-us {
+    background-color: var(--darkblue);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    color: var(--bgclr);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-us:hover {
+    background-color: var(--lightblack);
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: var(--bgclr);
+}
+
+.hero-section {
+    width: 100%;
+    height: 60vh;
+    margin-top: 3.5rem; /* Adjust to account for fixed navbar height */
+}
+
+.hero-img img {
+    height: 50%;
+}
+
+.become-an-owner, .car-models, .financial-options, .about-us, .contact-us-section {
+    margin-top: 1.5rem;
+    background-color: var(--lightblue);
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.become-an-owner {
+    margin-top: 23.25rem;
+}
+
+.financial-options {
+    margin-top: 23.25rem;
+}
+
+.box-heading {
+    width: 30%;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-weight: 800;
+    line-height: 5rem;
+    text-align: right;
+}
+
+.box-content {
+    width: 40%;
+    font-size: 2rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    color: var(--lightblack);
+    text-align: left;
+}
+
+.name-highlight {
+    font-weight: 600;
+}
+
+.explore-more, .contact-us-btn {
+    margin-top: 1rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--darkblue);
+    border-radius: 0.25rem;
+    border: none;
+    color: var(--bgclr);
+    font-weight: 600;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-more:hover, .contact-us-btn:hover {
+    background-color: var(--lightblack);
+}
+
+.explore-financing {
+    width: 14rem;
+}
+
+.explore-more-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.car-models, .about-us {
+    flex-direction: row-reverse;
+    background-color: var(--bgclr);
+    color: var(--darkblack);
+}
+
+.car-models, .about-us .box-heading {
+    color: var(--lightblue);
+    text-align: left;
+}
+
+.car-models, .about-us .box-content {
+    color: var(--darkblack);
+    text-align: right;
+}
+
+.footer {
+    background-color: var(--darkblack);
+    color: var(--lightblue);
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-media a {
+    color: var(--lightblue);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--darkblue);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-content a {
+    color: var(--lightblue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-content a:hover {
+    color: var(--darkblue);
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .box-heading, .box-content {
+        text-align: center;
+        width: 100%;
+        font-size: 1.75rem;
+    }
+
+    .box-heading {
+        margin-bottom: 1rem;
+    }
+
+    .become-an-owner, .car-models, .financial-options, .about-us, .contact-us-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-content {
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+

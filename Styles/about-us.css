@@ -1,0 +1,104 @@
+@font-face {
+    font-family: raleway;
+    src: url(myfont.ttf);
+}
+
+.our-story, .our-mission, .our-team, .our-values {
+    margin-top: 1.5rem;
+    background-color: var(--lightblue);
+    max-width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-story {
+    margin-top: 28rem ;
+}
+
+.our-mission , .our-values{
+    background-color: var(--bgclr);
+    color: var(--darkblack);
+    padding: 3rem 2rem;
+}
+
+
+.box-heading {
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--darkblue);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.box-content {
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--lightblack);
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease;
+}
+.team-member img:hover
+{
+    transform: scale(1.2);
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    color: var(--darkblue);
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: var(--lightblack);
+}
+
+@media (max-width: 768px) {
+    .our-story, .our-mission, .our-team, .our-values {
+        padding: 2rem 1.5rem;
+    }
+
+    .box-heading, .box-content {
+        text-align: center;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+
+    .team-member img {
+        width: 80px;
+        height: 80px;
+    }
+}
